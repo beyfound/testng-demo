@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All" time-out="60000">
+    <listeners>
+        <listener class-name="org.example.listener.RetryListener"></listener>
+    </listeners>
+    <suite-files>
+        <suite-file path="buyer.xml"></suite-file>
+        <suite-file path="supplier.xml"></suite-file>
+    </suite-files>
+</suite>
